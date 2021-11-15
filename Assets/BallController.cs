@@ -29,6 +29,7 @@ public class BallController : MonoBehaviour
     {
         if (collision.gameObject.tag == "LargeCloudTag" || collision.gameObject.tag == "LargeStarTag")
         {
+            // 得点追加
             scoreObject.GetComponent<CountText>().AddLargeScore();
         }
         else if (collision.gameObject.tag == "SmallCloudTag" || collision.gameObject.tag == "SmallStarTag")
